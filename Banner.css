@@ -1,0 +1,17 @@
+.contenedor1{
+    background: url(Img/DCenter.jpg)repeat 0 0;
+    height: 550px;
+    background-size: cover;
+    text-align: center;
+    grid-area: contenedor;
+    margin: 0;
+    padding: 0;
+    font-family: "arial", heletica, sans-serif;
+    font-size: 12px;
+    -webkit-animation: 70s linear 0s normal none infinite animate;
+    -moz-animation: 70s linear 0s normal none infinite animate;
+    -ms-animation: 70s linear 0s normal none infinite animate;
+    -o-animation: 70s linear 0s normal none infinite animate;
+    animation: 70s linear 0s normal none infinite animate;
+
+}
