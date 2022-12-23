@@ -58,11 +58,21 @@ img.redimension {
   max-width: 7%;
   max-height: 7%;
 }
-.contenedor_Nav {
 
+.contenedor_Nav {
   margin-right: 20vh;
+}
+
+.contenedor_titulo {
 
 }
+
+.contenedor_titulo label {
+  background-color: rgb(33, 37, 41);
+  border-radius: 8px;
+  font-size: 30px;
+}
+
 .contenedor_Info {
   background-color: rgb(180, 180, 180);
   padding-left: 10%;
@@ -223,14 +233,15 @@ img.redimension {
   }
 }
 
-@media screen and (max-width: 700px){
-  body{
-  font-size:12px;
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 12px;
   }
-  }
-  /* Por debajo de 400px */(
-  @media screen and (max-width: 400px){
-  body{
-  font-size:10px;
-  }
+}
+
+/* Por debajo de 400px */
+(@media screen and (max-width: 400px) {
+    body {
+      font-size:10px;
+    }
   }
