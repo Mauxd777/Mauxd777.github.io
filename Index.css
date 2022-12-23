@@ -58,7 +58,11 @@ img.redimension {
   max-width: 7%;
   max-height: 7%;
 }
+.contenedor_Nav {
 
+  margin-right: 20vh;
+
+}
 .contenedor_Info {
   background-color: rgb(180, 180, 180);
   padding-left: 10%;
