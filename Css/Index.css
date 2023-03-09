@@ -1,31 +1,45 @@
+/*Color a la pagina*/
+
 body {
   background-color: rgb(245, 246, 252);
 }
 
-.contenedor1 {
-  border-color: black;
-  margin: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
-  text-align: center;
+
+
+/*-----------------Navbar------------------- */
+/*Para acomodar el texto dentro del navbar*/
+.contenedor_Nav {
+  margin-left: 7%;
 }
 
+.Nav_border {
+  border-bottom: 1px solid rgb(206, 206, 206);
+}
+
+/*Se resalta el color cunado pones el cursor sobre este texto se usa en menu*/
 .my-heading {
   color: black;
   transition: color 0.2s;
 }
 
+/*Es parte del anterior*/
 .my-heading:hover {
-  color: rgb(110, 59, 252);
+  color: rgb(204, 0, 255);
 }
 
+.redimension_git {
+  margin-left: 12px;
+  max-width: 7%;
+  max-height: 7%;
+}
 
-
+/*Quitar que el btn creado por boobstrap no tengo el fondo de btn*/
 .btn:focus,
 .btn:active {
   box-shadow: none !important;
 }
 
+/*caracteristicas del boton del menu*/
 .btn {
   width: 42px;
   height: 42px;
@@ -34,140 +48,141 @@ body {
 
 }
 
+/* icon de menu*/
 .redimension-Menu {
   max-width: 200%;
   max-height: 200%;
 }
 
+/*Cambiamos el color de navbar creado por boostrap a la pagina*/
+
 .bg-smoke-dark {
+  font-family: 'Chivo Mono', monospace;
   background-color: rgb(245, 246, 252);
   background-color: rgb(245, 246, 252);
   color: black;
 }
 
-.Nav_border {
+/*-----------------Navbar Fin ------------------- */
 
-  border-bottom: 1px solid black;
+
+
+/*primer div*/
+.contenedor_Img_text {
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/imagenes-de-programacion-web-1.appspot.com/o/Curriculumn%2FWall.png?alt=media&token=aca690a8-54d9-4885-826e-e00e4a3b6c31);
+  margin: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%;
+  text-align: center;
 }
 
-.texto {
-  background-color: rgb(180, 180, 180);
-  padding-left: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid black;
-  padding: 2vh;
-  margin: 20px;
-  border-radius: 8px;
-}
-
-img.redimension {
+/*imagen (gif superior)*/
+.redimension_img {
   max-width: 71%;
   max-height: 71%;
 }
 
-.redimension-git {
-  max-width: 7%;
-  max-height: 7%;
-}
-
-
-
-.contenedor_Nav {
-  margin-left: 7%;
-
-}
-
-
-
-
-.contenedor_Info {
-  background-color: rgb(180, 180, 180);
-  padding-left: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid black;
-  padding: 2vh;
-  margin: 20px;
-  margin-top: 10vh;
-  border-radius: 8px;
-
-}
-
-
-
-
-
-.responsive {
-  display: grid;
-  height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 2.5fr 2.5fr 2.5fr 2.5fr 2.5fr 0.8fr;
-  grid-template-areas:
-    "header header header header"
-    "contenedor contenedor contenedor contenedor"
-    "contenedor5 contenedor5 contenedor5 contenedor5"
-    "contenedor2 contenedor2 contenedor2 contenedor2"
-    "contenedor3 contenedor3 contenedor3 contenedor3"
-    "contenedor4 contenedor4 contenedor4 contenedor4"
-    "footer footer footer footer";
-  grid-gap: 0.2rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  font-size: 12px;
-  color: #004b40;
-  text-align: center;
-
-}
-
-.contenedor {
-  background: url(https://firebasestorage.googleapis.com/v0/b/imagenes-de-programacion-web-1.appspot.com/o/Curriculumn%2FOtrmas.png?alt=media&token=8a790f84-ccee-402c-93d4-b099b98e2f5e)repeat 0 0;
-  height: 550px;
-  background-size: cover;
-  text-align: center;
-  grid-area: contenedor;
-  margin: 0;
-  padding: 0;
-  font-family: "arial", heletica, sans-serif;
-  font-size: 12px;
-  -webkit-animation: 70s linear 0s normal none infinite animate;
-  -moz-animation: 70s linear 0s normal none infinite animate;
-  -ms-animation: 70s linear 0s normal none infinite animate;
-  -o-animation: 70s linear 0s normal none infinite animate;
-  animation: 70s linear 0s normal none infinite animate;
-
-}
-
-
+/*div print (gif superior)*/
 .contenedor_titulo {
   padding: 10%;
 }
 
-.contenedor {
-  font-weight: bold;
-  text-decoration: none;
-  padding: 4px 20px;
-  border-radius: 30px;
-  font-size: 70px;
-  margin: 10px;
-
-}
-
-.titulo {
-  margin-left: 5%;
-  margin-right: 5%;
-  text-align: center;
-}
-
-.Titulo-print {
+/*imagen (gif superior)*/
+.Titulo_print {
+  font-family: 'Chivo Mono', monospace;
   font-size: 2rem;
 }
 
+/* div #2 introducion de la imforamacion personal*/
+
+.contenedor_Info {
+  font-family: 'Chivo Mono', monospace;
+  margin-top: 5%;
+}
+
+.contenedor_Info h1 {
+  margin-left: 5px;
+}
+
+.info-block {
+  border: 1px solid black;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.Block_information {
+  margin: 2%;
+
+}
+
+.social:visited {
+  color: rgb(255, 255, 255);
+}
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------FOOTER------------------- */
+
+
+footer {
+  background-color: #282828;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.container_Footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container_Footer h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.container_Footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container_Footer ul li {
+  margin-bottom: 10px;
+}
+
+.container_Footer ul li a {
+  color: #fff;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social li {
+  margin-right: 20px;
+}
+
+.social li:last-child {
+  margin-right: 0;
+}
+
+.fa {
+  font-size: 20px;
+}
