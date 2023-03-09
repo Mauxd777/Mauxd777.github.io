@@ -17,47 +17,53 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="../Css/Index.css">
 </head>
 
 <body>
 
+
     <!--Inciar navbar -->
-    <div class="nav1">
-        <nav class="navbar navbar-dark bg-dark fixed-top">
-            <div class="container-fluid">
+    <div class="bg-smoke-dark">
+        <nav class="navbar navbar-dark bg-smoke-dark">
+            <div class="container-fluid bg-smoke-dark">
                 <div class="contenedor_Nav" style="color: azure;">
-                    <span style="color: rgb(131, 1, 252);">Print </span>(
-                    <span style="color: rgb(58, 253, 19);">"Portafolio de Sebastián"</span> +
-                    <span style="color: rgb(248, 117, 30);">"\n"</span> +
-                    <span style="color: rgb(58, 253, 19);">"Toca el menú para más información ==>" </span>)
+                    <span
+                        style="color: rgb(0, 0, 0); text-align: center; font-family: 'Chivo Mono', monospace; font-size: 20px;">Curriculimn
+                        Sebastian Hernande Jimenez</span>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+                    aria-controls="offcanvasDarkNavbar" class="Menu">
+                    <img class="redimension-Menu"
+                        src="https://firebasestorage.googleapis.com/v0/b/imagenes-de-programacion-web-1.appspot.com/o/Curriculumn%2Fmenu.png?alt=media&token=9e1235d9-1ab0-4426-b8db-3f2bf7ceb535">
                 </button>
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                <div class="offcanvas offcanvas-end text-bg-dark bg-smoke-dark" tabindex="-1" id="offcanvasDarkNavbar"
                     aria-labelledby="offcanvasDarkNavbarLabel">
-                    <div class="offcanvas-header">
+                    <div class="offcanvas-header bg-smoke-dark">
                         <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body">
+                    <div class="offcanvas-body bg-smoke-dark">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <li class="nav-item bg-smoke-dark">
+                                <a style="color: #000; " class="nav-link active my-heading:hover" aria-current="page"
+                                    href="#">Home</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://github.com/Mauxd777" style="color: blueviolet;">
+
+                            <li class="nav-item bg-smoke-dark">
+                                <a class="nav-link my-heading" href="https://github.com/Mauxd777">
                                     Mi git
-                                    <img class="redimension-git" src="Img/unnamed.png">
+                                    <img class="redimension-git"
+                                        src="https://firebasestorage.googleapis.com/v0/b/imagenes-de-programacion-web-1.appspot.com/o/Curriculumn%2Funnamed.png?alt=media&token=9f7c60da-1135-44ad-b5df-8f6b9e7ba5a5">
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Tabla.html" style="color: blueviolet;">
-                                    Tabla Andres
-                                    <img class="redimension-git">
+
+                            <li class="nav-item bg-smoke-dark">
+                                <a class="nav-link my-heading" href="https://github.com/Mauxd777">
+                                    Mi git
+                                    <img class="redimension-git"
+                                        src="https://firebasestorage.googleapis.com/v0/b/imagenes-de-programacion-web-1.appspot.com/o/Curriculumn%2Funnamed.png?alt=media&token=9f7c60da-1135-44ad-b5df-8f6b9e7ba5a5">
                                 </a>
                             </li>
                         </ul>
@@ -66,34 +72,41 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             </div>
         </nav>
     </div>
-    <!--Termina navbar -->
+    <!--Termina navbar 
     <div class="contenedor">
     </div>
+-->
+
+
+
     <div class="contenedor1">
         <br>
         <div class="contenedor_titulo" style="font-family: 'Chivo Mono', monospace;">
-            <label style="color: rgb(180, 180, 180);">
-                <span style="color: rgb(131, 1, 252);"><span>&#160;</span>Print</span>(
-                <span style="color: rgb(58, 253, 19);">"¡Hello word!"</span> )
+            <label class="Titulo-print">
+                <span id="texto-colorido">Print ("¡Hello word!")</span>
+
+
+
+                <!--
+                        <span style="color: rgb(0, 0, 0);"><span>&#160;</span>(</span>
+                    <span style="color: rgb(58, 253, 19);">"¡Hello word!"</span>
+                    <span style="color: rgb(0, 0, 0);"><span>&#160;</span>)</span>
+-->
+
             </label>
+
         </div>
-
-
         <img class="redimension"
             src="https://firebasestorage.googleapis.com/v0/b/imagenes-de-programacion-web-1.appspot.com/o/Curriculumn%2Fcrm-cream.gif?alt=media&token=ec27fee3-65df-46a3-bdb4-bb27f0a8a7b2">
     </div>
-
-
     <div class="contenedor_Info">
         Hello everyone, my name is Sebastian Hernandez Jimenez and I am a systems engineering student. I love being
         web developer and databases
         I am currently finishing my university degree at la fidelitas and at the same time I am improving my English in
         the institute
         of intense learning, I love learning new things every day every day that I program.
-    </div>
-
-
-    <a href="Banner.html"> bannner</a>
+    </div
 </body>
+
 
 </html>

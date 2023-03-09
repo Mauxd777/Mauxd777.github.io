@@ -1,0 +1,186 @@
+body {
+  background-color: rgb(245, 246, 252);
+}
+
+.contenedor1 {
+  border-color: black;
+  margin: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}
+
+.my-heading {
+  color: black;
+  transition: color 0.2s;
+}
+
+.my-heading:hover {
+  color: rgb(110, 59, 252);
+}
+
+h1 {
+  background-color: rgb(33, 37, 41);
+  border-radius: 10px;
+  color: #ffff;
+  margin-left: 40vh;
+  margin-right: 40vh;
+}
+
+.btn:focus,
+.btn:active {
+  box-shadow: none !important;
+}
+
+.btn {
+  width: 70px;
+  height: 70px;
+  border-color: rgb(245, 246, 252);
+}
+
+.redimension-Menu {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+.bg-smoke-dark {
+  background-color: rgb(245, 246, 252);
+  background-color: rgb(245, 246, 252);
+  color: black;
+}
+
+.texto {
+  background-color: rgb(180, 180, 180);
+  padding-left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 2vh;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+img.redimension {
+  max-width: 71%;
+  max-height: 71%;
+}
+
+.redimension-git {
+  max-width: 7%;
+  max-height: 7%;
+}
+
+
+
+.contenedor_Nav {
+  margin-left: 7%;
+}
+
+
+.Titulo-print {
+  background-color: rgb(245, 246, 252);
+  border-radius: 11px;
+  font-size: 35px;
+
+  border-width: 2px;
+}
+
+.contenedor_Info {
+  background-color: rgb(180, 180, 180);
+  padding-left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 2vh;
+  margin: 20px;
+  margin-top: 10vh;
+  border-radius: 8px;
+
+}
+
+
+
+
+
+.responsive {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 2.5fr 2.5fr 2.5fr 2.5fr 2.5fr 0.8fr;
+  grid-template-areas:
+    "header header header header"
+    "contenedor contenedor contenedor contenedor"
+    "contenedor5 contenedor5 contenedor5 contenedor5"
+    "contenedor2 contenedor2 contenedor2 contenedor2"
+    "contenedor3 contenedor3 contenedor3 contenedor3"
+    "contenedor4 contenedor4 contenedor4 contenedor4"
+    "footer footer footer footer";
+  grid-gap: 0.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #004b40;
+  text-align: center;
+
+}
+
+.contenedor {
+  background: url(https://firebasestorage.googleapis.com/v0/b/imagenes-de-programacion-web-1.appspot.com/o/Curriculumn%2FOtrmas.png?alt=media&token=8a790f84-ccee-402c-93d4-b099b98e2f5e)repeat 0 0;
+  height: 550px;
+  background-size: cover;
+  text-align: center;
+  grid-area: contenedor;
+  margin: 0;
+  padding: 0;
+  font-family: "arial", heletica, sans-serif;
+  font-size: 12px;
+  -webkit-animation: 70s linear 0s normal none infinite animate;
+  -moz-animation: 70s linear 0s normal none infinite animate;
+  -ms-animation: 70s linear 0s normal none infinite animate;
+  -o-animation: 70s linear 0s normal none infinite animate;
+  animation: 70s linear 0s normal none infinite animate;
+
+}
+
+.contenedor h {
+  font-weight: bold;
+  text-decoration: none;
+  padding: 4px 20px;
+  border-radius: 30px;
+  font-size: 70px;
+  margin: 10px;
+
+}
+
+.titulo {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}
+
+
+
+.Titulo-print span {
+  display: block;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 24ch;
+  animation: typing 3s steps(24), blink .5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyFrames typing {
+
+  from {
+    width: 0
+  }
+}
+
+@keyFrames blink {
+  50% {
+    border-color: transparent
+  }
+}
