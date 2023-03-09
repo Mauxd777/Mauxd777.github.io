@@ -19,13 +19,7 @@ body {
   color: rgb(110, 59, 252);
 }
 
-h1 {
-  background-color: rgb(33, 37, 41);
-  border-radius: 10px;
-  color: #ffff;
-  margin-left: 40vh;
-  margin-right: 40vh;
-}
+
 
 .btn:focus,
 .btn:active {
@@ -33,21 +27,27 @@ h1 {
 }
 
 .btn {
-  width: 70px;
-  height: 70px;
+  width: 42px;
+  height: 42px;
   border-color: rgb(245, 246, 252);
+  padding: 1px;
+
 }
 
 .redimension-Menu {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 200%;
+  max-height: 200%;
 }
-
 
 .bg-smoke-dark {
   background-color: rgb(245, 246, 252);
   background-color: rgb(245, 246, 252);
   color: black;
+}
+
+.Nav_border {
+
+  border-bottom: 1px solid black;
 }
 
 .texto {
@@ -76,16 +76,11 @@ img.redimension {
 
 .contenedor_Nav {
   margin-left: 7%;
+
 }
 
 
-.Titulo-print {
-  background-color: rgb(245, 246, 252);
-  border-radius: 11px;
-  font-size: 35px;
 
-  border-width: 2px;
-}
 
 .contenedor_Info {
   background-color: rgb(180, 180, 180);
@@ -145,7 +140,12 @@ img.redimension {
 
 }
 
-.contenedor h {
+
+.contenedor_titulo {
+  padding: 10%;
+}
+
+.contenedor {
   font-weight: bold;
   text-decoration: none;
   padding: 4px 20px;
@@ -161,26 +161,13 @@ img.redimension {
   text-align: center;
 }
 
-
-
-.Titulo-print span {
-  display: block;
-  white-space: nowrap;
-  border-right: 4px solid;
-  width: 24ch;
-  animation: typing 3s steps(24), blink .5s infinite step-end alternate;
-  overflow: hidden;
+.Titulo-print {
+  font-size: 2rem;
 }
 
-@keyFrames typing {
 
-  from {
-    width: 0
-  }
-}
 
-@keyFrames blink {
-  50% {
-    border-color: transparent
-  }
-}
+
+
+
+
