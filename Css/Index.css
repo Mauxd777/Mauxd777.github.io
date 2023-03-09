@@ -87,7 +87,6 @@ body {
 .contenedor_titulo {
   padding: 10%;
 }
-
 /*imagen (gif superior)*/
 .Titulo_print {
   font-family: 'Chivo Mono', monospace;
@@ -186,3 +185,6 @@ footer {
 .fa {
   font-size: 20px;
 }
+
+
+/**/
