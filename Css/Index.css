@@ -1,6 +1,32 @@
-/*Color a la pagina*/
+/*Regargar pagina*/
+.fade-in {
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.contenedor {
+  border: solid 1px black;
+}
+
+
 
 body {
+  overflow-x: hidden;
+  /* previene scroll horizontal mientras se carga la página */
+  animation: fade-in 1s ease-in-out;
   background-color: rgb(245, 246, 252);
 }
 
@@ -118,15 +144,61 @@ body {
 
 }
 
-.social:visited {
-  color: rgb(255, 255, 255);
+
+
+/*-----------------------------------------------------------*/
+/*Boton que se meuve laterarl ente (Terminal)*/
+.Terminal {
+  background-color: #3d3d3d;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+}
+
+.Contenedor_Terminal {
+  text-align: center;
+}
+
+/* Modal */
+.modal {
+  padding-top: 100px;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Contenido del modal */
+.modal-contenido {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  margin: 5%;
+  height: 80%;
+}
+
+/* Botón de cerrar */
+.cerrar {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 
 
+/*-----------------------------------------------------------*/
 
+.btn_game {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
 
-
+}
 
 
 

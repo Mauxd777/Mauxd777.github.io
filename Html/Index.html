@@ -7,14 +7,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
 <head>
     <title>Curriculum Vitae</title>
-    <link rel="icon" type="image/png" href="../Img/Perfil.png">
+    <link rel="icon" type="image/png" href="../Img/Icon_Perfil.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+        </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&display=swap" rel="stylesheet">
@@ -22,7 +22,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 </head>
 
 <body>
-
     <!--Inciar navbar -->
     <div class="bg-smoke-dark">
         <nav class="navbar navbar-dark bg-smoke-dark Nav_border">
@@ -30,7 +29,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 <div class="contenedor_Nav" style="color: azure;">
                     <span
                         style="color: rgb(0, 0, 0); text-align: center; font-family: 'Chivo Mono', monospace; font-size: 20px;">
-                        • Curriculum Vitae Sebastian Hernande Jimenez</span>
+                        • Curriculum Vitae de Sebastián Hernández Jiménez</span>
                 </div>
                 <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
                     aria-controls="offcanvasDarkNavbar" class="Menu">
@@ -96,59 +95,104 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     </div>
     <!--Contiene la GIF y texto de Print("¡Hello word!")  -->
 
+    <!-- Modal -->
+    <div id="mi-modal" class="modal">
+        <!-- Contenido del modal -->
+        <div class="modal-contenido">
+            <!-- Botón de cerrar -->
+            <span style="cursor: default;" class="cerrar">&times;</span>
+            <!-- Contenido del modal -->
+            <h1>Mi modal</h1>
+            <p>Esto es una pequeña prueba.</p>
+            <input type="text">
+        </div>
+    </div>
     <div class="contenedor_Info">
+        <div class="Contenedor_Terminal">
+            <button id="boton" class="Terminal"> Terminal</button>
+        </div>
+
         <h1>About me</h1>
         <hr>
         <div class="Block_information">
             <p>Hello everyone, my name is Sebastian Hernandez Jimenez and I am a systems engineering student. I love
-                being web developer and databases. I am currently finishing my university degree at la fidelitas and at
-                the same time I am improving my English in the institute of intense learning. I love learning new things
+                being web developer and databases. I am currently finishing my university degree at la fidelitas and
+                at
+                the same time I am improving my English in the institute of intense learning. I love learning new
+                things
                 every day every day that I program.</p>
 
             <div class="info-block">
                 <p>I have experience in web development using HTML, CSS, JavaScript and PHP. I am also familiar with
                     databases such as MySQL and MongoDB. In my free time, I enjoy working on personal projects and
-                    contributing to open source projects. Feel free to contact me if you have any questions or just want
+                    contributing to open source projects. Feel free to contact me if you have any questions or just
+                    want
                     to say hi!</p>
             </div>
 
         </div>
     </div>
+    <div style=" text-align: center;"> <a href="Juego_Snake.html" class="btn_game"> Game</a> </div>
+
 </body>
+<script>
+    // Obtener los botones botón que abre ek modal, botón de cerrar y el modal
+    const boton = document.getElementById("boton");
+    const modal = document.getElementById("mi-modal");
+    const botonCerrar = document.getElementsByClassName("cerrar")[0];
+    // Cuando el usuario hace clic en el botón, abrir el modal
+    boton.onclick = function () {
+        modal.style.display = "block";
+    };
+    // Cuando el usuario hace clic en <span> (x), cerrar el modal
+    botonCerrar.onclick = function () {
+        modal.style.display = "none";
+    };
+    /* Cuando el usuario hace clic en cualquier lugar fuera del modal, cerrarlo
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+    */
+
+</script>
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <h4>Author</h4>
-                <p>Sebastina Hernandez Jimenez</p>
-                <h4>Nationality</h4>
-                <p>Costa Rican <img style="margin-left:5px;"
-                        src="https://firebasestorage.googleapis.com/v0/b/imagenes-de-programacion-web-1.appspot.com/o/Curriculumn%2Fcosta-rica.png?alt=media&token=14f51d1b-ecc7-4848-8768-125718a3337c">
-                </p>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <h4>Contacts</h4>
-                <ul>
-                    <li><a href="mailto:contacto@miempresa.com">SebastianHernandezJimenez019@gmail.com</a></li>
-                    <li><a href="tel:+506 70514135">+506 70514135</a></li>
-                    <li><a
-                            href="https://www.google.com/maps/place/EBAIS+Tipo+2+La+Ribera/@9.98555,-84.1943963,14z/data=!4m15!1m8!3m7!1s0x8fa0fa32fcfe0c5f:0x5c773032646dc470!2zSGVyZWRpYSwgQmVsw6lu!3b1!8m2!3d9.9797191!4d-84.1804384!16s%2Fm%2F02w2xyk!3m5!1s0x8fa0fa2a5d1033d1:0x27311aa75585ab17!8m2!3d9.9913488!4d-84.1838261!16s%2Fg%2F11cr_z52kc">
-                            Heredia
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <h4>Social</h4>
-                <a class="social" href="https://www.facebook.com/sebas.hernandezjimenez">Faceboock <img
-                        style="margin-left: 19px; margin-top: 5px;"
-                        src="https://firebasestorage.googleapis.com/v0/b/imagenes-de-programacion-web-1.appspot.com/o/Curriculumn%2Ffacebook.png?alt=media&token=7954add7-871b-44db-9849-1bef94cfacb5">
-                </a>
-                <br>
-                <a class="social" href="https://www.instagram.com/sebashj6/"> Instagram <img
-                        style="margin-left: 22px; margin-top: 5px;"
-                        src="https://firebasestorage.googleapis.com/v0/b/imagenes-de-programacion-web-1.appspot.com/o/Curriculumn%2Finstagram.png?alt=media&token=8ebf078e-b412-4c99-8ac8-207b8f9a4941">
-                </a>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <h4>Author</h4>
+                    <p>Sebastina Hernandez Jimenez</p>
+                    <h4>Nationality</h4>
+                    <p>Costa Rican <img style="margin-left:5px;"
+                            src="https://firebasestorage.googleapis.com/v0/b/imagenes-de-programacion-web-1.appspot.com/o/Curriculumn%2Fcosta-rica.png?alt=media&amp;token=14f51d1b-ecc7-4848-8768-125718a3337c">
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4>Contacts</h4>
+                    <ul>
+                        <li><a href="mailto:contacto@miempresa.com">SebastianHernandezJimenez019@gmail.com</a></li>
+                        <li><a href="tel:+506 70514135">+506 70514135</a></li>
+                        <li><a
+                                href="https://www.google.com/maps/place/EBAIS+Tipo+2+La+Ribera/@9.98555,-84.1943963,14z/data=!4m15!1m8!3m7!1s0x8fa0fa32fcfe0c5f:0x5c773032646dc470!2zSGVyZWRpYSwgQmVsw6lu!3b1!8m2!3d9.9797191!4d-84.1804384!16s%2Fm%2F02w2xyk!3m5!1s0x8fa0fa2a5d1033d1:0x27311aa75585ab17!8m2!3d9.9913488!4d-84.1838261!16s%2Fg%2F11cr_z52kc">
+                                Heredia
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4>Social</h4>
+                    <a class="social" href="https://www.facebook.com/sebas.hernandezjimenez">Faceboock <img
+                            style="margin-left: 19px; margin-top: 5px;"
+                            src="https://firebasestorage.googleapis.com/v0/b/imagenes-de-programacion-web-1.appspot.com/o/Curriculumn%2Ffacebook.png?alt=media&amp;token=7954add7-871b-44db-9849-1bef94cfacb5">
+                    </a>
+                    <br>
+                    <a class="social" href="https://www.instagram.com/sebashj6/"> Instagram <img
+                            style="margin-left: 22px; margin-top: 5px;"
+                            src="https://firebasestorage.googleapis.com/v0/b/imagenes-de-programacion-web-1.appspot.com/o/Curriculumn%2Finstagram.png?alt=media&amp;token=8ebf078e-b412-4c99-8ac8-207b8f9a4941">
+                    </a>
+                </div>
             </div>
         </div>
     </div>

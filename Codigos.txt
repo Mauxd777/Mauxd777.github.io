@@ -1,175 +1,74 @@
-  <span style="color: rgb(131, 1, 252);">Print </span>(
-                    <span style="color: rgb(58, 253, 19);">"Portafolio de Sebastián"</span> +
-                    <span style="color: rgb(248, 117, 30);">"\n"</span> +
-                    <span style="color: rgb(58, 253, 19);">"Toca el menú para más información ==>" </span>)
+<!DOCTYPE html>
+<html lang="en">
 
-Label color 
-rgb(45, 57, 131);
+<head>
+    <title>Game Snake</title>
+    <link rel="icon" type="image/png" href="../Img/Icon_Snake.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Css/JuegoSnake.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <script src="../Scripts/Game_Snake.js"></script>
+</head>
 
 
-@keyframes parpadeo {
+<body>
+   
+</body>
 
-  0%,
-  41%,
-  45%,
-  47%,
-  49.5%,
-  100% {
-    opacity: 1;
-  }
 
-  42%,
-  44%,
-  46%,
-  48%,
-  50% {
-    opacity: 0;
-  }
-}
 
-@media only screen and (max-width:550px) {
-  .responsive {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 1.5fr 0.5fr 1.5fr 1.5fr 1.5fr 1.2fr;
-    grid-template-areas:
-      "header"
-      "contenedor"
-      "contenedor5"
-      "contenedor2"
-      "contenedor3"
-      "contenedor4"
-      "footer";
-  }
-}
+</html>
 
-@-webkit-keyframes animate {
-  from {
-    background-position: 0 0;
-  }
 
-  to {
-    background-position: 7680px 0;
-  }
-}
 
-@-moz-keyframes animate {
-  from {
-    background-position: 0 0;
-  }
 
-  to {
-    background-position: 7680px 0;
-  }
-}
 
-@-ms-keyframes animate {
-  from {
-    background-position: 0 0;
-  }
+Mover boton *********************************************
 
-  to {
-    background-position: 7680px 0;
-  }
-}
 
-@-o-keyframes animate {
-  from {
-    background-position: 0 0;
-  }
+    var pos2 = 0, pos4 = 0;
 
-  to {
-    background-position: 7680px 0;
-  }
-}
+    // Agregar un controlador de eventos para el botón
+    boton.onmousedown = dragMouseDown;
 
-@keyframes maquina {
-  from {
-    width: 100%;
-  }
-
-  to {
-    width: 0;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  body {
-    font-size: 12px;
-  }
-}
-
-/* Por debajo de 400px */
-(@media screen and (max-width: 400px) {
-    body {
-      font-size:10px;
+    function dragMouseDown(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // Guardar la posición actual del mouse
+        pos4 = e.clientY;
+        document.onmouseup = closeDragElement;
+        // Agregar un controlador de eventos que se activará cuando se mueva el mouse
+        document.onmousemove = elementDrag;
     }
-  }
 
+    function elementDrag(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // Calcular la nueva posición del botón
+        pos2 = pos4 - e.clientY;
+        pos4 = e.clientY;
+        // Establecer la nueva posición del botón
+        if ((boton.offsetTop - pos2) < limiteSuperior) {
+            boton.style.top = limiteSuperior + "px";
+        } else if ((boton.offsetTop - pos2) > limiteInferior) {
+            boton.style.top = limiteInferior + "px";
+        } else {
+            boton.style.top = (boton.offsetTop - pos2) + "px";
+        }
+        function closeDragElement() {
+            // Eliminar los controladores de eventos al soltar el botón del mouse
+            document.onmouseup = null;
+            document.onmousemove = null;
+        }
 
+    }
 
-
-
-
-
-  .texto {
-  background-color: rgb(180, 180, 180);
-  padding-left: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid black;
-  padding: 2vh;
-  margin: 20px;
-  border-radius: 8px;
-}
-
-.contenedor {
-  font-weight: bold;
-  text-decoration: none;
-  padding: 4px 20px;
-  border-radius: 30px;
-  font-size: 70px;
-  margin: 10px;
-
-}
-
-.responsive {
-  display: grid;
-  height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 2.5fr 2.5fr 2.5fr 2.5fr 2.5fr 0.8fr;
-  grid-template-areas:
-    "header header header header"
-    "contenedor contenedor contenedor contenedor"
-    "contenedor5 contenedor5 contenedor5 contenedor5"
-    "contenedor2 contenedor2 contenedor2 contenedor2"
-    "contenedor3 contenedor3 contenedor3 contenedor3"
-    "contenedor4 contenedor4 contenedor4 contenedor4"
-    "footer footer footer footer";
-  grid-gap: 0.2rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  font-size: 12px;
-  color: #004b40;
-  text-align: center;
-
-}
-
-.contenedor {
-  background: url(https://firebasestorage.googleapis.com/v0/b/imagenes-de-programacion-web-1.appspot.com/o/Curriculumn%2FOtrmas.png?alt=media&token=8a790f84-ccee-402c-93d4-b099b98e2f5e)repeat 0 0;
-  height: 550px;
-  background-size: cover;
-  text-align: center;
-  grid-area: contenedor;
-  margin: 0;
-  padding: 0;
-  font-family: "arial", heletica, sans-serif;
-  font-size: 12px;
-  -webkit-animation: 70s linear 0s normal none infinite animate;
-  -moz-animation: 70s linear 0s normal none infinite animate;
-  -ms-animation: 70s linear 0s normal none infinite animate;
-  -o-animation: 70s linear 0s normal none infinite animate;
-  animation: 70s linear 0s normal none infinite animate;
-
-}
+    function closeDragElement() {
+        // Eliminar los controladores de eventos al soltar el botón del mouse
+        document.onmouseup = null;
+        document.onmousemove = null;
+    }
 
