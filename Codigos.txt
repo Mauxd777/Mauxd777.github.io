@@ -72,3 +72,9 @@ Mover boton *********************************************
         document.onmousemove = null;
     }
 
+
+
+
+
+<title>Game Snake</title>
+    <link rel="icon" type="image/png" href="../Img/Icon_Snake.png">

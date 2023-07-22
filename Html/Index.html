@@ -15,10 +15,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
         </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Css/Index.css">
+    <script src="../Scripts/Index.js" type="text/javascript" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -84,10 +88,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <br>
         <div>
             <p class="Titulo_print">
-                <span style="color: rgb(119, 14, 240); display: inline-block;"><span></span>Print</span>
-                <span style="color: rgb(0, 0, 0); display: inline-block; "><span></span>(</span>
-                <span style="color: rgb(58, 253, 19); display: inline-block;">"¡Hello word!"</span>
-                <span style="color: rgb(0, 0, 0); display: inline-block;"><span></span>)</span>
+                <label style="z-index: 2;">
+                    <span style=" color: rgb(119, 14, 240); display: inline-block;"><span></span>Print</span>
+                    <span style="color: rgb(0, 0, 0); display: inline-block; "><span></span>(</span>
+                    <span style="color: rgb(58, 253, 19); display: inline-block;">"¡Hello word!"</span>
+                    <span style="color: rgb(0, 0, 0); display: inline-block;"><span></span>)</span>
+
+                </label>
+
             </p>
         </div>
         <img class="redimension_img"
@@ -95,21 +103,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     </div>
     <!--Contiene la GIF y texto de Print("¡Hello word!")  -->
 
-    <!-- Modal -->
-    <div id="mi-modal" class="modal">
-        <!-- Contenido del modal -->
-        <div class="modal-contenido">
-            <!-- Botón de cerrar -->
-            <span style="cursor: default;" class="cerrar">&times;</span>
-            <!-- Contenido del modal -->
-            <h1>Mi modal</h1>
-            <p>Esto es una pequeña prueba.</p>
-            <input type="text">
-        </div>
-    </div>
     <div class="contenedor_Info">
         <div class="Contenedor_Terminal">
-            <button id="boton" class="Terminal"> Terminal</button>
+            <button  id="boton" class="Terminalbtn">Terminal</button>
         </div>
 
         <h1>About me</h1>
@@ -135,28 +131,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <div style=" text-align: center;"> <a href="Juego_Snake.html" class="btn_game"> Game</a> </div>
 
 </body>
-<script>
-    // Obtener los botones botón que abre ek modal, botón de cerrar y el modal
-    const boton = document.getElementById("boton");
-    const modal = document.getElementById("mi-modal");
-    const botonCerrar = document.getElementsByClassName("cerrar")[0];
-    // Cuando el usuario hace clic en el botón, abrir el modal
-    boton.onclick = function () {
-        modal.style.display = "block";
-    };
-    // Cuando el usuario hace clic en <span> (x), cerrar el modal
-    botonCerrar.onclick = function () {
-        modal.style.display = "none";
-    };
-    /* Cuando el usuario hace clic en cualquier lugar fuera del modal, cerrarlo
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    };
-    */
 
-</script>
 <footer>
     <div class="container">
         <div class="row">
