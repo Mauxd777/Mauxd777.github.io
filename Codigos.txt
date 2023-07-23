@@ -78,3 +78,20 @@ Mover boton *********************************************
 
 <title>Game Snake</title>
     <link rel="icon" type="image/png" href="../Img/Icon_Snake.png">
+
+
+
+Hello world
+************************************
+<div>
+            <p class="Titulo_print">
+                <label style="z-index: 2;">
+                    
+                    <span style=" color: rgb(119, 14, 240); display: inline-block;"><span></span>Print</span>
+                    <span style="color: rgb(0, 0, 0); display: inline-block; "><span></span>(</span>
+                    <span style="color: rgb(58, 253, 19); display: inline-block;">"¡Hello word!"</span>
+                    <span style="color: rgb(0, 0, 0); display: inline-block;"><span></span>)</span>
+                </label>
+
+            </p>
+        </div>
