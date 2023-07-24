@@ -5,11 +5,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
+            "name": "Launch Edge",
             "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080",
+            "type": "msedge",
+            "url": "file:///C:/Users/sebas/OneDrive/Documentos/GitHub/Mauxd777.github.io/Html/Index.html",
             "webRoot": "${workspaceFolder}"
-        }
+        },
     ]
 }
